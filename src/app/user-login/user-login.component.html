@@ -1,0 +1,14 @@
+<div class="container col-md-6">
+  <h1 class="heading">User Login</h1>
+  <form (ngSubmit)="userLogin()">
+    <div class="mb-3">
+      <label for="userID" class="form-label">User ID</label>
+      <input type="text" [(ngModel)]="user.userID" class="form-control" id="userID" placeholder="Enter user ID here" name="userID">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" [(ngModel)]="user.password" class="form-control" id="password" placeholder="Enter password here" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>
